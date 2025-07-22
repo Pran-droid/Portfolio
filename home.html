@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranay - Portfolio</title>
+    <link rel="stylesheet" href="sytle.css">
+</head>
+<body>
+    <header>
+        <nav id="navBar">
+            <div class="top left">Pranay's Portfolio</div>
+            <div class="top right">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="sec-first">
+            <div class="seg-left">
+                Hi, <span style="color: rgb(8, 85, 85); text-shadow: 2px 2px 2px rgba(41, 41, 41, 0.3);">Pranay Reddy</span> here & I am a <br>
+                <span id="element" style="color: rgb(0, 59, 63);"></span>
+            </div>
+            <div class="seg-right">
+                <img src="assets/image/bg.png" alt="">
+            </div>
+            <dir id="about"></dir>
+        </section>
+        
+        <hr >
+        <section class="sec sec-second" >
+        <h2 >About</h2>
+            <div class="box">
+                <p>A student passionate about software development and eager to build my skills in the tech world. Currently, I'm studying Computer Science at Fr. Concierao Rodrigues College of Engineering, where I'm diving deep into concepts like Web development and Game Development.
+                I'm looking forward to connecting with like-minded individuals and expanding my knowledge as I work towards a career in tech!</p>
+                <div class="resume">
+                    <h4>Resume &#128196;</h4>
+                    <a href="assets/PRANAY REDDY CV.pdf" target="_blank"><button class="view">View</button></a>
+                    <a href="assets/PRANAY REDDY CV.pdf" download><button class="Download">Download</button></a>
+                </div>
+            </div>
+            <dir id="projects"></dir>
+        </section>
+        
+        <hr>
+        
+        <section class="sec sec-third">
+            <h2>Projects</h2>
+            <div class="container">
+                <div class="cards">
+                    <img style="object-position: 0 -93px;" src="assets/image/tic-tac-toe.webp" alt="">
+                    <div class="link">
+                        <a href="https://github.com/Pran-droid/TIC-TAC-TOE">TIC TAC TOE</a>
+                        <p>Game in JAVA</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="assets/image/p2p.png" alt="">
+                    <div class="link">
+                        <a href="https://github.com/Pran-droid/P2P-LENDING-WEBSITE">P2P Lending Platform</a>
+                        <p>Wedsite in Python</p>
+                    </div>    
+                </div>
+                <div class="cards">
+                    <img src="assets/image/netflix.jpg" alt="">
+                    <div class="link">
+                        <a href="https://github.com/Pran-droid">Netflix</a>
+                        <p>GUI in HTML CSS</p>
+                    </div>    
+                </div>
+            </div>
+            <dir id="contact"></dir>
+        </section>
+        
+        <hr>
+
+        <section class="sec sec-fourth" >
+        <h2 >Contact</h2>
+            <div class="box" style="margin: 12px 0;">
+                <div>
+                    <label for="username">Enter your name:</label>
+                    <input type="text" placeholder="" id="username">
+                </div>
+                <div>
+                    <label for="username">Enter your email:</label>
+                    <input type="text" placeholder="" id="email"> 
+                </div>
+                <div><textarea name="comments" id="" placeholder="Any message..."></textarea></div>
+                <button class="submit">Submit</button>
+            </div>
+            <dir id="projects"></dir>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <div class="copy:"">©2025 Portfolio. All rights reserved</div>
+        <div class="icons">
+            <a href="https://github.com/Pran-droid"><img src="assets/icon/github.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/pranay-reddy-8513592a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app  "><img src="assets/icon/linkedin-logo.png" alt=""></a>
+            <a href="https://www.instagram.com/l_am_pranay/"><img src="assets/icon/instagram.png" alt=""></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Animator', 'Video Editor', 'Game Developer'],
+          typeSpeed: 50,
+          loop: true,
+          loopCount: Infinity,
+        });
+      </script>
+</body>
+</html>
