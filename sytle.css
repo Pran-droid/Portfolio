@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(240, 240, 240);
+    color:#202020;
+    font-family: "Poppins", serif;
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    background-color: rgb(182, 166, 166);
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+    transition: all 80ms ease-out;
+}
+
+nav.scrolled {
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.12);
+}
+
+nav .top{
+    margin: 0 5%;
+}
+
+nav .left{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav .right ul{
+    list-style: none;   
+    display: flex;
+}
+
+nav ul li{
+    margin: 0 23px;
+}
+
+a{
+    text-decoration: none;
+    color:#202020;
+}
+
+a:hover{
+    text-decoration: none;
+    color:rgb(82, 82, 82);
+}
+
+main{
+    margin: 3% 5%;
+}
+
+.sec-first{
+    display: flex;
+    justify-content: space-around;
+    margin: 23px 0;
+    align-items: center;
+}
+.sec-first > div{
+    width: 40%;
+}
+
+.seg-right img{
+    background-color: #202020 ;
+    border-radius: 12px;
+    margin: 20px;
+    width:100%;
+    justify-self:end;
+}
+
+.seg-left{
+    font-size: 2.7rem;
+}
+
+hr{
+    border: 0; 
+    background-color: rgb(182, 166, 166);
+    height: 1.5px;
+}
+
+.sec{
+    margin: 3% 10%;
+}
+
+.sec-second .box{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    margin: auto;
+}
+
+.sec-second .resume{
+    margin-top: 12px;
+    width: 25%;
+    height: 110px;
+    justify-items: center;
+    align-content: center;
+    align-self: center;
+    background-color:rgb(219, 201, 201);
+    border-radius: 12px;
+    transition: all 0.2s;
+}
+
+.sec-second .resume:hover{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+button{
+    margin: 8px;
+    padding: 8px 0;
+    width: 85px;  
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 12px;
+    cursor: pointer;
+    color:#202020;
+    font-family: "Poppins", serif;
+    transition: all 0.2s;
+}
+
+button:hover{
+    background-color: rgb(92, 87, 87);
+    color: aliceblue;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+button:active{
+    box-shadow: none;
+}
+
+.sec-third{
+    margin: 3% 10%;
+}
+
+.sec-third .container{
+    margin: 12px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 200px;
+    gap: 12px;
+}       
+.sec-third .container .cards{
+    /* background-color: rgba(158, 158, 158, 0.377); */
+    background-color: rgba(126, 124, 124, 0.377);
+    border-radius: 12px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    overflow:hidden;
+    transition: all .2s;
+}
+
+.cards:hover{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sec-third .container .cards img{
+    width: 500px;
+    height: 100px;
+    object-fit:cover;
+}
+
+.sec-third .container .cards .link{
+    margin: 12px;
+}
+
+
+.sec-third .container .cards .link a{
+    font-size: larger;
+    text-decoration: underline;
+}
+.sec-third .container .cards .link p{
+    font-size: smaller;
+}
+
+.sec-fourth{
+    display: flex;
+    flex-flow: column;
+}
+
+.sec-fourth .box{
+    width: 40%;
+    height: 225px;
+    justify-items: center;
+    align-content: center;
+    align-self: center;
+    background-color:rgb(219, 201, 201);
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+
+.sec-fourth .box:hover{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sec-fourth input{
+    padding: 2px ;
+    margin: 2px;
+    border-radius: 8px;
+    border: 0.5px solid rgb(68, 68, 68);
+    font-family: "Poppins", serif;
+}
+
+textarea{
+    padding: 12px;
+    margin: 4px;
+    border-radius: 12px;
+    width: 300px;
+    resize: none;
+    font-family: "Poppins", serif;
+}
+
+footer{
+    height: 100px;
+    margin: 12px 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons img{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.icons {
+    display: flex;
+    width: 200px;
+    justify-content:space-around;
+    align-items: center;
+    justify-self: right;
+}
+
+.icons :nth-child(1):hover{
+    transform: scale(1.3);
+}
